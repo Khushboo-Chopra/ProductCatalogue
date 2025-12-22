@@ -10,4 +10,7 @@ public interface IProductService {
     public Product getProductById(Long id);
 
     public Product createProduct(Product product);
+
+    public Product replaceProduct(Long id,Product input);
+
 }
