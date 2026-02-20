@@ -13,4 +13,6 @@ public interface IProductService {
 
     public Product replaceProduct(Long id,Product input);
 
+    public void deleteProduct(Long id);
+
 }
