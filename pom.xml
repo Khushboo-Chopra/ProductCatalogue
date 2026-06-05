@@ -73,6 +73,8 @@
             <version>1.18.38</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/com.razorpay/razorpay-java -->
     </dependencies>
 
     <build>
