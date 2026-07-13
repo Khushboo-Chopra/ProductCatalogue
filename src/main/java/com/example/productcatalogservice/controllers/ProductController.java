@@ -121,6 +121,10 @@ public class ProductController {
         return product;
     }
 
-
+    @GetMapping("/{productId}/{userId}")
+    public ProductDto getProductBasedOnUserRole(@PathVariable(value = "productId") Long productId, @PathVariable(value = "userId") Long userId) {
+        Product product = productService.getProductBasedOnUserScope(productId, userId);
+        return from(product);
+    }
 }
 

@@ -38,4 +38,9 @@ public class ProductServiceStub implements IProductService {
     public void deleteProduct(Long id) {
 
     }
+
+    @Override
+    public Product getProductBasedOnUserScope(Long productId, Long userId) {
+        return null;
+    }
 }

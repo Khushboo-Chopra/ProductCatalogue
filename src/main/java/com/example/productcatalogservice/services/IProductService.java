@@ -5,14 +5,15 @@ import com.example.productcatalogservice.models.Product;
 import java.util.List;
 
 public interface IProductService {
-    public List<Product> getAllProducts();
+     List<Product> getAllProducts();
 
-    public Product getProductById(Long id);
+     Product getProductById(Long id);
 
-    public Product createProduct(Product product);
+     Product createProduct(Product product);
 
-    public Product replaceProduct(Long id,Product input);
+     Product replaceProduct(Long id,Product input);
 
-    public void deleteProduct(Long id);
+     void deleteProduct(Long id);
 
+    Product getProductBasedOnUserScope(Long productId, Long userId);
 }

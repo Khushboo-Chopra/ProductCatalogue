@@ -56,6 +56,11 @@ public class FakeStoreProductService implements IProductService {
 //to be implemented using requestforentity method
     }
 
+    @Override
+    public Product getProductBasedOnUserScope(Long productId, Long userId) {
+        return null;
+    }
+
     private Product from(FakeStoreProductDto fakeStoreProductDto) {
         Product product = new Product();
         product.setId(fakeStoreProductDto.getId());
